@@ -4,9 +4,7 @@ const express = require("express");
 
 const app = express();
 
-const PORT = process.env.PORT;
-const envVariable = process.env.Variable;
-
+const PORT = 3000;
 
 app.get("/", (req, res)=>{
     res.status(200).send(`<h1>Hello this is Ozuru Dev Showing how Vercel Hosting is done</h1><br><a href='/about.html'>About Page</a>`);
