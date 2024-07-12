@@ -5,7 +5,8 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res)=>{
-    res.status(200).send("<h1>Hello this is Marvel Showing how Vercel Hosting is done</h1><br><a href='/about.html'>About Page</a>")
+    const response = `<h1>Hello this is Ozuru Dev Showing how Vercel Hosting is done</h1><br><a href='/about.html'>About Page</a>`;
+    res.status(200).send(response);
 })
 app.get("/about.html", (req, res)=>{
     res.status(200).send("<h1>Welcome to the about page</h1>")
